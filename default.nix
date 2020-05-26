@@ -3,8 +3,9 @@ let
   ekamSrc = pkgs.fetchFromGitHub {
     owner = "capnproto";
     repo = "ekam";
-    rev = "2ff0ff164508fd25a04997881227e9cf4312f754";
-    sha256 = "1529gx3jd34n1icx9dzzqpg0c0z7c9bifirq951s3d2ji4qj5nm2";
+    # Master as of 2020-04-15:
+    rev = "8937eac2ae6120801b829398d430ff6fdd49a53b";
+    sha256 = "1awmdcv0aagiqyibxfcjbwmjmvpdx5w49s610z66kj1scf7l65r3";
   };
   capnprotoSrc = pkgs.fetchFromGitHub {
     owner = "capnproto";
