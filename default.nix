@@ -10,8 +10,8 @@ let
   capnprotoSrc = pkgs.fetchFromGitHub {
     owner = "capnproto";
     repo = "capnproto";
-    rev = "v0.7.0";
-    sha256 = "0kznsmnd25gzlmba9zaziwsbblgiwc6lg3g2ibkph30gwi8dvzk3";
+    rev = "v0.8.0";
+    sha256 = "0z7p9687bdvhddgyb6b3j0c3bngynnyvc8z6yp4hhynvrlvsmy5d";
   };
 in
 pkgs.stdenv.mkDerivation {
