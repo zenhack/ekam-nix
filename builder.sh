@@ -14,7 +14,7 @@ mkdir -p deps
 # under nix-build.
 cp -r "$capnprotoSrc" deps/capnproto
 chmod u+w deps/capnproto/c++/src/kj -R
-sed -i 's/\/var\/tmp/\/tmp/g' deps/capnproto/c++/src/kj/filesystem-disk-test.c++
+sed -i 's|/var/tmp|/tmp|g' deps/capnproto/c++/src/kj/filesystem-disk-test.c++
 
 # NIX_ENFORCE_PURITY prevents ld from linking against anything outside of the
 # nix store -- but ekam builds capnp locally and links against it, so that causes
