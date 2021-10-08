@@ -23,4 +23,12 @@ pkgs.stdenv.mkDerivation {
   # Make these visible as env vars in the builder:
   ekamSrc = ekamSrc;
   capnprotoSrc = capnprotoSrc;
+
+  meta = with pkgs.lib; {
+    description = ''Build system ("make" in reverse)'';
+    longDescription = ''Ekam ("make" spelled backwards) is a build system which automatically figures out what to build and how to build it purely based on the source code. No separate "makefile" is needed.'';
+    homepage = "https://github.com/capnproto/ekam";
+    license = licenses.asl20;
+    platforms = platforms.linux;
+  };
 }
