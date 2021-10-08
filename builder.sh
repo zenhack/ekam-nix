@@ -26,3 +26,8 @@ unset NIX_ENFORCE_PURITY
 make
 mkdir $out
 cp -r bin $out
+
+# Remove capnproto tools; there's a separate nix package for that.
+rm $out/bin/capnp*
+# Don't distribute ekam-bootstrap, which is not needed outside this build.
+rm $out/bin/ekam-bootstrap
